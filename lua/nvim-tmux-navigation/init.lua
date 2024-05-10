@@ -106,6 +106,7 @@ function M.NvimTmuxNavigateUp() navigate('k') end
 function M.NvimTmuxNavigateRight() navigate('l') end
 function M.NvimTmuxNavigateLastActive() navigate('p') end
 function M.NvimTmuxNavigateNext() navigate('n') end
+function M.NvimTmuxToggleZoom() util.toggle_zoom() end
 
 local function create_command(command_name, func, direction)
     -- use nvim's user command api to create commands
